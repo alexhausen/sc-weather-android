@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">SC Weather</string>
+    <string name="cities">Cities</string>
+
+    <string name="action_refresh">Refresh</string>
+    <string name="action_cities">Cities</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- WeatherSyncAdapter -->
+    <string name="sync_account_type">sky.net</string>
+    <string name="content_authority">net.sky.scweather</string>
+    <string name="sync_error">Synchronization error</string>
+
+    <string name="pref_current_city_key" translatable="false">currentCity</string>
+    <string name="pref_cities_key" translatable="false">cities</string>
+
+    <string name="manage_cities">Manage Cities</string>
+    <string name="search_hint">Search city name</string>
+    <string name="search_title">Search City</string>
+
+</resources>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Default city ID -->
+    <integer name="pref_city_default">4205407</integer>
+
+</resources>
