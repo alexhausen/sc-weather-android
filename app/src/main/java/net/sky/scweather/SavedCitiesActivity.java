@@ -28,7 +28,7 @@ public class SavedCitiesActivity extends AppCompatActivity implements LoaderMana
     };
     public static final int COLUMN_SAVED_CITY_ID = 0;
     public static final int COLUMN_SAVED_CITY_FK = 1;
-    public static final int COLUMN_SAVED_CITY_NAME = 3;
+    public static final int COLUMN_SAVED_CITY_NAME = 2;
 
     private static final String[] SEARCH_CITY_COLUMNS = {
             WeatherContract.CityEntry._ID,
