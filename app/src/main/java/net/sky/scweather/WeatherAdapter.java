@@ -112,16 +112,16 @@ class WeatherAdapter extends BaseExpandableListAdapter {
         if (dayForecast.count() == 0) return;
         Date date = forecast.getDate(i);
         int viewType = getGroupType(i);
-        String expandedChar = isExpanded ? "-" : "+";
+//        String expandedChar = isExpanded ? "-" : "+";
         if (viewType == VIEW_TYPE_SUMMARY) {
             TextView tv = (TextView) view.findViewById(R.id.list_item_weather_parent_summary_text_view);
-            String text = String.format(Locale.getDefault(), "%s %s %d periods", expandedChar,
+            String text = String.format(Locale.getDefault(), "%s %d periods",
                     dateFormat.format(date), dayForecast.count());
             tv.setText(text);
         } else if (viewType == VIEW_TYPE_SINGLE) {
             TextView tv = (TextView) view.findViewById(R.id.list_item_weather_single_text_view);
             WeatherForecast.PeriodForecast period = dayForecast.getPeriod(0);
-            String text = String.format(Locale.getDefault(), "%s %s min:%d max:%d, icon:%d", expandedChar,
+            String text = String.format(Locale.getDefault(), "%s min:%d max:%d, icon:%d",
                     dateFormat.format(date), period.getTemperatureMin(), period.getTemperatureMax(),
                     period.getIcon());
             tv.setText(text);
